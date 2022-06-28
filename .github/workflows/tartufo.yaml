@@ -1,0 +1,9 @@
+name: tartufo
+on: [push, pull_request]
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pip install tartufo
+      - run: tartufo scan-local-repo $GITHUB_WORKSPACE

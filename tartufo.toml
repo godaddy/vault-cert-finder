@@ -1,0 +1,6 @@
+[tool.tartufo]
+
+exclude-path-patterns = [
+    {path-pattern = 'yarn.lock', reason = 'auto generated, contains shas'},
+    {path-pattern = 'src/tests/fixtures/certs.json', reason = 'test certs, specifically generated for testing this tool'}
+]

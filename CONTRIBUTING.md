@@ -35,11 +35,12 @@ a Github issue in that project. All dependencies should be open source software
 and can be found on Github.
 
 Submit a ticket for your issue, assuming one does not already exist:
-  - Create it on the project's [issue Tracker][issues].
-  - Clearly describe the issue by following the template layout
-    - Make sure to include steps to reproduce the bug.
-    - A reproducible (unit) test could be helpful in solving the bug.
-    - Describe the environment that (re)produced the problem.
+
+- Create it on the project's [issue Tracker][issues].
+- Clearly describe the issue by following the template layout
+  - Make sure to include steps to reproduce the bug.
+  - A reproducible (unit) test could be helpful in solving the bug.
+  - Describe the environment that (re)produced the problem.
 
 ## Triaging bugs or contributing code
 
@@ -49,11 +50,12 @@ about a sample or unit test that reproduces a bug in just a few lines of code
 is easier than reasoning about a longer sample.
 
 From a practical perspective, contributions are as simple as:
+
 1. Fork and clone the repo, [see Github's instructions if you need help.][fork]
 1. Create a branch for your PR with `git checkout -b pr/your-branch-name`
 1. Make changes on the branch of your forked repository.
 1. When committing, reference your issue (if present) and include a note about
-  the fix.
+   the fix.
 1. Please also add/update unit tests for your changes.
 1. Push the changes to your fork and submit a pull request to the 'main
    development branch' branch of the projects' repository.
@@ -65,17 +67,19 @@ Github comments or in [Slack][slack]. After reaching a consensus with core
 contributors about the change, discuss the best way to go about implementing it.
 
 > Tip: Keep your master branch pointing at the original repository and make
->  pull requests from branches on your fork. To do this, run:
->   ```
+> pull requests from branches on your fork. To do this, run:
+>
+> ```
 > git remote add upstream https://github.com/godaddy/<this-project>.git
 > git fetch upstream
 > git branch --set-upstream-to=upstream/master master
->   ```
->   This will add the original repository as a "remote" called "upstream," Then
->   fetch the git information from that remote, then set your local master
->   branch to use the upstream master branch whenever you run git pull. Then you
->   can make all of your pull request branches based on this master branch.
->   Whenever you want to update your version of master, do a regular git pull.
+> ```
+>
+> This will add the original repository as a "remote" called "upstream," Then
+> fetch the git information from that remote, then set your local master
+> branch to use the upstream master branch whenever you run git pull. Then you
+> can make all of your pull request branches based on this master branch.
+> Whenever you want to update your version of master, do a regular git pull.
 
 ## Code Review
 
@@ -90,12 +94,12 @@ larger features. Here are some accepted ways to speed up review times for your
 patches:
 
 - Review other people’s changes. If you help out, others will more likely be
-willing to do the same for you.
+  willing to do the same for you.
 - Split your change into multiple smaller changes. The smaller your change,
-the higher the probability that somebody will take a quick look at it.
+  the higher the probability that somebody will take a quick look at it.
 - Mention the change on [Slack][slack]. If it is urgent, provide reasons why it
-is important to get this change landed. Remember that you are asking for valuable
-time from other professional developers.
+  is important to get this change landed. Remember that you are asking for valuable
+  time from other professional developers.
 
 **Note that anyone is welcome to review and give feedback on a change, but only
 people with commit access to the repository can approve it.**
