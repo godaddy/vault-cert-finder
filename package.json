@@ -18,7 +18,7 @@
     "node-vault": "0.9.22"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.4.4",
+    "@commitlint/cli": "17.5.0",
     "@commitlint/config-conventional": "17.4.4",
     "@types/debug": "4.1.7",
     "@types/jest": "29.5.0",
