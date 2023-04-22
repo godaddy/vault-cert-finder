@@ -1,4 +1,4 @@
-FROM node:19.9-alpine
+FROM node:20.0-alpine
 WORKDIR /usr/src/vault-cert-finder
 COPY . ./
 RUN yarn
