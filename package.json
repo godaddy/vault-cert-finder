@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "debug": "4.3.4",
-    "dotenv": "16.3.1",
+    "dotenv": "16.3.2",
     "node-vault": "0.10.2"
   },
   "devDependencies": {
